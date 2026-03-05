@@ -19,6 +19,66 @@ https://www.demoblaze.com
 
 ---
 
+# Automation Framework Architecture Diagram
+                    +----------------------+
+                    |      Test Cases      |
+                    |----------------------|
+                    |  UI Tests            |
+                    |  API Tests           |
+                    |  Regression / Smoke  |
+                    +----------+-----------+
+                               |
+                               |
+                               v
+                    +----------------------+
+                    |       Fixtures       |
+                    |----------------------|
+                    | Page Initialization  |
+                    | Test Setup / Teardown|
+                    +----------+-----------+
+                               |
+                               |
+                               v
+                    +----------------------+
+                    |      Page Objects    |
+                    |----------------------|
+                    | LoginPage            |
+                    | ProductPage          |
+                    | CartPage             |
+                    +----------+-----------+
+                               |
+                               |
+                               v
+                    +----------------------+
+                    |       Utilities      |
+                    |----------------------|
+                    | Env Config           |
+                    | Logger               |
+                    | Test Data            |
+                    +----------+-----------+
+                               |
+                               |
+                               v
+                    +----------------------+
+                    |  Playwright Engine   |
+                    |----------------------|
+                    | Browser Automation   |
+                    | API Client           |
+                    | Assertions           |
+                    +----------+-----------+
+                               |
+                               |
+                               v
+                    +----------------------+
+                    |    CI/CD Pipeline    |
+                    |----------------------|
+                    | GitHub Actions       |
+                    | Parallel Execution   |
+                    | HTML Reports         |
+                    +----------------------+
+
+---
+
 # Framework Architecture
 
 The framework is structured to ensure maintainability, scalability, and ease of extension.
